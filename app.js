@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var addresses = require('./routes/addresses');
 var cors = require('cors');
+require("dotenv").config();
 require('./configs/database');
 
 var app = express();

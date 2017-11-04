@@ -1,14 +1,10 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const dbName = 'demo';
 
 // connect to the database
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect(`mongodb://heroku_qfx65dtc:vfisa2s10bc0ht66q8gmiu9800@ds149335.mlab.com:49335/heroku_qfx65dtc`);
 
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => {
-  console.log(`Connected to the ${dbName} database`);
-});
