@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const addressSchema = new mongoose.Schema({
   OBJECTID:{
-    type:String
+    type:Number
   },
   SSL:{
     type:String
@@ -13,7 +13,7 @@ const addressSchema = new mongoose.Schema({
     type:String
   },
   LAND_USE_CODE:{
-    type:String
+    type:Number
   },
   LAND_USE_DESCRIPTION:{
     type:String
@@ -25,7 +25,7 @@ const addressSchema = new mongoose.Schema({
     type:String
   },
   OTR_NEIGHBORHOOD_CODE:{
-    type:String
+    type:Number
   },
   OTR_NEIGHBORHOOD_NAME:{
     type:String
@@ -85,22 +85,22 @@ const addressSchema = new mongoose.Schema({
     type:String
   },
   TAXRATE:{
-    type:String
+    type:Number
   },
   MIXED_USE:{
-    type:String
+    type:Number
   },
   OWNER_OCCUPIED_COOP_UNITS:{
     type:String
   },
   LAST_SALE_PRICE:{
-    type:String
+    type:Number
   },
   LAST_SALE_DATE:{
-    type:String
+    type:Date
   },
   DEED_DATE:{
-    type:String
+    type:Date
   },
   CURRENT_ASSESSMENT_CAP:{
     type:String
@@ -112,10 +112,10 @@ const addressSchema = new mongoose.Schema({
     type:String
   },
   ADDRESS_ID:{
-    type:String
+    type:Number
   },
   LASTMODIFIEDDATE:{
-    type:String
+    type:Date
   },
 
 });
