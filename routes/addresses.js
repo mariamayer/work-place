@@ -13,6 +13,8 @@ router.get('/addresses/:perPage/:page', (req, res, next) => {
 
     if( queryVar == '' || filter=='' ){
         queryVar = query(filter);
+    }else if(filter[0]=='remove'){
+        delete queryVar[filter[1]];
     }else{
         var newQuery = query(filter);
         Object.assign(queryVar, newQuery);
